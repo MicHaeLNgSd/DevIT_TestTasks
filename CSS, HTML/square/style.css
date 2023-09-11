@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+@keyframes rotateRecolor {
+    0% {
+        transform: translate(-50%,-50%) rotate(0deg);
+        background-color: red;
+    }
+    33% {
+        transform: translate(-50%,-50%) rotate(120deg);
+        background-color: orange;
+    }
+    66% {
+        transform: translate(-50%,-50%) rotate(240deg);
+        background-color: green;
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(360deg);
+        background-color: red;
+    }
+}
+
+.square{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: red;
+    animation-name: rotateRecolor;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

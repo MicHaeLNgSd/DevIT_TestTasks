@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    width: 80%;
+    height: 80%;
+    margin: 10vh auto 5vh auto ;
+
+    font-family: sans-serif;
+    font-weight: 900;
+
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 5vh 30vh 6vh;
+    grid-gap: .5em 1em;
+}
+
+header, nav, content, aside, footer{
+    border: 2px black solid;
+    width: 100%;
+    min-height: 30px;
+
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header,nav,footer{
+    grid-column: span 2;
+}
+content,aside{
+    margin: 0.5em 0 0.5em 0;
+}

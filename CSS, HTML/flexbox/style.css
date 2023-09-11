@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    width: 80%;
+    height: 80%;
+    margin: 70px auto 50px auto ;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+header, nav, content, aside, footer{
+    border: 2px black solid;
+    width: 100%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper * {
+    margin: 5px 0;
+}
+
+header{
+    height: 10vh;
+}
+nav{
+    height: 5vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    gap: 15px;
+}
+content{
+    flex: 3;
+}
+aside{
+    flex: 1;
+}
+footer{
+    height: 6vh;
+}
