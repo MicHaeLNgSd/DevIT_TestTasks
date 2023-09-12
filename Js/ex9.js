@@ -10,10 +10,10 @@ function add(num) {
 }
   
 // Приклади викликів функції add і виведення результатів
-console.log(Number(add(1)(2)));        // 3
-console.log(Number(add(1)(2)(5)));     // 8
-console.log(Number(add(1)(2)(-3)(4)));  // 4
-console.log(Number(add(1)(2)(3)(4)(-5)));// 5
+console.log(Number(add(1)(2)));           // 3
+console.log(Number(add(1)(2)(5)));        // 8
+console.log(Number(add(1)(2)(-3)(4)));    // 4
+console.log(Number(add(1)(2)(3)(4)(-5))); // 5
 
 
 // function add(num) {
